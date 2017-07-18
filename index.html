@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>FCC Weather</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid">
+  <div class="header center-align">
+    <h1 class="main-title">Weather Check</h1>
+
+    <button class="button-start">Get my location</button>
+
+  </div>
+  <div class="row">
+    <div id="error" class="center-align col-md-6"></div>
+    <div class="result center-align col-md-6"></div>
+  </div>
+
+  <div class="row">
+    <div id="left-info" class="col-md-6">
+      <p id="current-date"></p>
+      <p id="current-location"></p>
+    </div>
+    <div id="right-info" class="col-md-3">
+      <i class="wi"></i>
+      <div id="current-temp">
+        <p id="temp" style="display:inline"></p>
+        <button id="temp-c" class="btn btn-link hovered"></button>
+        <span id="divider"></span>
+        <button id="temp-f"class="btn btn-link"></button>
+      </div>
+    </div>
+    
+    <table class="table-m-screen hidden">
+      <thead>
+        <tr>
+          <th>Precipitation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="precip-val"></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>Humidity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="humid-val"></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>Wind</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="wind-val"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <table class="table-s-screen hidden">
+      <thead>
+        <tr>
+          <th>Precipitation</th>
+          <th>Humidity</th>
+          <th>Wind</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="precip-val"></td>
+          <td class="humid-val"></td>
+          <td class="wind-val"></td>
+        </tr>
+      </tbody>
+    </table>
+
+  <div class="footer center-align">
+    <p class="footer-text hidden">Powered By <b>Dark Sky</b></p>
+  </div>
+</div>
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
